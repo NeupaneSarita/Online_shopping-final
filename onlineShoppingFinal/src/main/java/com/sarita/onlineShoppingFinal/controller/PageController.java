@@ -44,7 +44,7 @@ public class PageController {
 		
 	}
 
-	@RequestMapping(value= "/show/category/{id}/products")
+	@RequestMapping(value= "/show/category/${id}/products")
 	public ModelAndView showCategoryProducts(@PathVariable("id") int id) {
 		ModelAndView mv=new ModelAndView("page");
 		//mv.addObject("greeting", "Welcome to spring web mvc");
@@ -61,6 +61,8 @@ public class PageController {
 		mv.addObject("userClickCategoryProducts", true);
 		return mv;	
 	}
+	
+	
 	@RequestMapping(value= "/show/all/products")
 	public ModelAndView showAllProducts() {
 		ModelAndView mv=new ModelAndView("page");

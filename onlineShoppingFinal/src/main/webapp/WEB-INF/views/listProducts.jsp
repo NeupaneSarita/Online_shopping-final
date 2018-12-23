@@ -27,7 +27,7 @@
 
 					</c:if>
 
-					<c:if test="${userClickCategoryProducts ==  true }">
+					<c:if test="${userClickCategoryProducts==true }">
 						<ol class="breadcrumb">
 							<li><a href="${contextRoot}/home">Home</a></li>
 							<li class="active">Category</li>
